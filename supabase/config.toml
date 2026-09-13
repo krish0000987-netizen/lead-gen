@@ -1,0 +1,36 @@
+project_id = "wrlsdefoimhdkjfujdna"
+[api]
+enabled = true
+host = "0.0.0.0"
+port = 54321
+schemas = ["public", "storage", "graphql", "realtime"]
+extra_search_path = ["public"]
+max_rows = 1000
+[auth]
+enabled = true
+host = "0.0.0.0"
+port = 54321
+site_url = "http://localhost:3000"
+additional_redirect_urls = []
+jwt_expiry = 3600
+refresh_token_rotated = true
+enable_refresh_token_rotation = true
+enable_signup = true
+[db]
+port = 54322
+host = "0.0.0.0"
+major_version = 15
+[studio]
+enabled = true
+host = "0.0.0.0"
+port = 54323
+[storage]
+enabled = true
+file_access_control_enabled = true
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true
+[functions]
+[functions.inngest]
+verify_jwt = true
